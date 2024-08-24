@@ -18,7 +18,7 @@ body {
 
 .nav__ul{
 	margin: 0px;
-	padding: 5px;
+	padding: 15px;
     border-bottom: 1px solid #373d48;
 }
 
@@ -61,15 +61,61 @@ body {
 .nav__responsive-buttom-container{
     position: absolute;
    	width: 100%;
-	  font-size: 25px;
-	  background-color: #69c;
-	  margin-top: -64px;
-	  z-index: 100;
+	font-size: 25px;
+	background-color: #131318;
+	border-bottom: 1px solid #373d48;
+	margin-top: -64px;
+	z-index: 100;
 }
 
 .nav__responsive-buttom{
 	padding: 6px 20px;
 	text-align: right;
+}
+
+.Perfil {
+	margin-top: 35px;
+	margin-left: 35px;
+	width: 260px;
+	position: sticky;
+}
+
+.Foto {
+	display: block;
+	border: 1px solid #373d48;
+	width: 7rem;
+    height: 7rem;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+.Foto img {
+	object-fit: cover;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+.bl4ck44 {
+	margin-top: 20px;
+	word-spacing: 1px;
+}
+
+.Social {
+	margin-top: 15px;
+}
+
+.Social a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 10px;
+}
+
+.Social i {
+	border-radius: 50%;
+	border: 1px solid #373d48;
+	padding: 5px;
 }
 
 @media only screen and (max-width: 450px){
@@ -89,7 +135,7 @@ body {
 		position: relative;
 		top: -1000px;
 		height: calc(100vh - 64px);
-		background-color: #9bf;
+		background-color: #131318;
 		transition: all 1s;
 		z-index: 1;
 		width: 250px;
@@ -106,7 +152,7 @@ body {
 		text-align: center;
 		margin-right: 5px;
 		width: 30px;
-		color: #016;
+		color: white;
 	}
 
     .nav {
@@ -116,7 +162,7 @@ body {
 
 	.nav__responsive_li a{
 		text-decoration: none;
-		color: #016;
+		color: white;
 	}
 
 	.nav__responsive_li:hover > a{
