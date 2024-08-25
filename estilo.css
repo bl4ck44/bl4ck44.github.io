@@ -175,6 +175,69 @@ button {
     .nav__li-container.visible {
         top: -27px;
     }
+
+	.Perfil {
+		display: flex;
+		margin-left: 20px;
+		width: 35px;
+	}
+
+	.Foto {
+		border: 1px solid #373d48;
+		width: 12rem;
+		height: 5rem;
+		border-radius: 50%;
+		padding: 7px;
+	}
+
+	.bl4ck44 {
+		margin-top: 0px;
+		margin-left: 10px;
+		font-size: 14px;
+	}
+
+	.Social {
+		display: none;
+	}
+
+	.Social-movile {
+		position: relative;
+		display: inline-block;
+	}
+
+	.Redes {
+		display: none; /* Oculto por defecto */
+		position: absolute;
+		top: 100%; /* Posiciona el cuadro justo debajo del botón */
+		right: 0;
+		background-color: #131318;
+		border: 1px solid #373d48;
+		padding: 10px;
+		z-index: 1;
+		width: 200px; /* Ancho del cuadro */
+		border-radius: 4%;
+	}
+
+	.Redes a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		margin-top: 10px;
+	}
+	
+	.Redes i {
+		margin-right: 20px;
+	}
+	
+	.Follow {
+		background-color: white;
+		color: black;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-top: 15px;
+		border-radius: 7%;
+	}
 }
   
 
@@ -233,6 +296,70 @@ button {
     .nav__li-container.visible {
         top: -27px;
     }
+
+	.Perfil {
+		display: flex;
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	.Foto {
+		border: 1px solid #373d48;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		padding: 7px;
+	}
+
+	.bl4ck44 {
+		margin-top: 10px;
+		margin-left: 10px;
+		font-size: 15px;
+	}
+
+	.Social {
+		display: none;
+	}
+
+	.Social-movile {
+		position: relative;
+		display: inline-block;
+	}
+
+	.Redes {
+		display: none; /* Oculto por defecto */
+		position: absolute;
+		top: 100%; /* Posiciona el cuadro justo debajo del botón */
+		right: 0;
+		background-color: #131318;
+		border: 1px solid #373d48;
+		padding: 10px;
+		z-index: 1;
+		width: 200px; /* Ancho del cuadro */
+		border-radius: 4%;
+	}
+
+	.Redes a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		margin-top: 10px;
+	}
+	
+	.Redes i {
+		margin-right: 20px;
+	}
+	
+	.Follow {
+		background-color: white;
+		color: black;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-top: 25px;
+		margin-left: 10px ;
+		border-radius: 7%;
+	}
 }
   
   /* 
@@ -290,6 +417,70 @@ button {
     .nav__li-container.visible {
         top: -27px;
     }
+
+	.Perfil {
+		display: flex;
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	.Foto {
+		border: 1px solid #373d48;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		padding: 7px;
+	}
+
+	.bl4ck44 {
+		margin-top: 10px;
+		margin-left: 10px;
+		font-size: 15px;
+	}
+
+	.Social {
+		display: none;
+	}
+
+	.Social-movile {
+		position: relative;
+		display: inline-block;
+	}
+
+	.Redes {
+		display: none; /* Oculto por defecto */
+		position: absolute;
+		top: 100%; /* Posiciona el cuadro justo debajo del botón */
+		right: 0;
+		background-color: #131318;
+		border: 1px solid #373d48;
+		padding: 10px;
+		z-index: 1;
+		width: 200px; /* Ancho del cuadro */
+		border-radius: 4%;
+	}
+
+	.Redes a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		margin-top: 10px;
+	}
+	
+	.Redes i {
+		margin-right: 20px;
+	}
+	
+	.Follow {
+		background-color: white;
+		color: black;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-top: 25px;
+		margin-left: 10px ;
+		border-radius: 7%;
+	}
 }
   
   /* 
