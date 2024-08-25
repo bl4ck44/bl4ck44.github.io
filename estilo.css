@@ -125,6 +125,7 @@ button {
 }
 
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
 	.nav__ul{
 		display: none;
@@ -239,7 +240,8 @@ button {
 		border-radius: 7%;
 	}
 }
-  
+
+
 
 /* 
 ##Device = Tablets, Ipads (landscape)
@@ -361,11 +363,13 @@ button {
 		border-radius: 7%;
 	}
 }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
+
+
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
   
 @media (min-width: 481px) and (max-width: 767px) {
 	.nav__ul{
@@ -482,11 +486,13 @@ button {
 		border-radius: 7%;
 	}
 }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
+
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
   
 @media (min-width: 320px) and (max-width: 480px) {
 	.nav__ul{
