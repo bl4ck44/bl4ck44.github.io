@@ -132,7 +132,7 @@ button {
 
 
 .Articulos {
-	width: 60vw;
+	width: 68vw;
 	margin-left: 350px;
 	margin-top: 50px;
 	border-bottom: 1px solid #373d48;
@@ -144,10 +144,23 @@ button {
 	margin-top: 20px;
 }
 
+.item2 {
+	margin-left: 350px;
+	margin-top: 100px;
+}
+
 p {
 	margin-top: 10px;
 }
 
+.link {
+	text-decoration: none;
+	color: #70a5a8;
+}
+
+i {
+	padding-top: 10px;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.nav__ul{
@@ -264,7 +277,7 @@ p {
 	}
 
 	.Articulos {
-		width: 60vw;
+		width: 68vw;
 		margin-left: 30px;
 		margin-top: 150px;
 		border-bottom: 1px solid #373d48;
@@ -274,6 +287,12 @@ p {
 	.item {
 		margin-left: 30px;
 		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.item2 {
+		margin-left: 30px;
+		margin-top: 90px;
 		font-size: 13px;
 	}
 }
@@ -401,7 +420,7 @@ p {
 	}
 
 	.Articulos {
-		width: 60vw;
+		width: 68vw;
 		margin-left: 30px;
 		margin-top: 150px;
 		border-bottom: 1px solid #373d48;
@@ -411,6 +430,12 @@ p {
 	.item {
 		margin-left: 30px;
 		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.item2 {
+		margin-left: 30px;
+		margin-top: 90px;
 		font-size: 13px;
 	}
 }
@@ -538,7 +563,7 @@ p {
 	}
 
 	.Articulos {
-		width: 60vw;
+		width: 68vw;
 		margin-left: 30px;
 		margin-top: 150px;
 		border-bottom: 1px solid #373d48;
@@ -548,6 +573,12 @@ p {
 	.item {
 		margin-left: 30px;
 		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.item2 {
+		margin-left: 30px;
+		margin-top: 90px;
 		font-size: 13px;
 	}
 }
@@ -674,7 +705,7 @@ p {
 	}
 
 	.Articulos {
-		width: 80vw;
+		width: 68vw;
 		margin-left: 30px;
 		margin-top: 150px;
 		border-bottom: 1px solid #373d48;
@@ -684,6 +715,12 @@ p {
 	.item {
 		margin-left: 30px;
 		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.item2 {
+		margin-left: 30px;
+		margin-top: 45px;
 		font-size: 13px;
 	}
 }
