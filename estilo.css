@@ -81,6 +81,7 @@ button {
 	margin-left: 35px;
 	width: 260px;
 	position: sticky;
+	float: left;
 }
 
 .Foto {
@@ -114,6 +115,11 @@ button {
 	margin-top: 10px;
 }
 
+.Social a:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
 .Social i {
 	border-radius: 50%;
 	border: 1px solid #373d48;
@@ -124,6 +130,23 @@ button {
 	display: none;
 }
 
+
+.Articulos {
+	width: 60vw;
+	margin-left: 350px;
+	margin-top: 50px;
+	border-bottom: 1px solid #373d48;
+	padding-bottom: 0.5em;
+}
+
+.item {
+	margin-left: 350px;
+	margin-top: 20px;
+}
+
+p {
+	margin-top: 10px;
+}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -238,6 +261,20 @@ button {
 		cursor: pointer;
 		margin-top: 15px;
 		border-radius: 7%;
+	}
+
+	.Articulos {
+		width: 60vw;
+		margin-left: 30px;
+		margin-top: 150px;
+		border-bottom: 1px solid #373d48;
+		padding-bottom: 0.5em;
+	}
+	
+	.item {
+		margin-left: 30px;
+		margin-top: 20px;
+		font-size: 13px;
 	}
 }
 
@@ -362,6 +399,20 @@ button {
 		margin-left: 10px ;
 		border-radius: 7%;
 	}
+
+	.Articulos {
+		width: 60vw;
+		margin-left: 30px;
+		margin-top: 150px;
+		border-bottom: 1px solid #373d48;
+		padding-bottom: 0.5em;
+	}
+	
+	.item {
+		margin-left: 30px;
+		margin-top: 20px;
+		font-size: 13px;
+	}
 }
 
 
@@ -485,6 +536,20 @@ button {
 		margin-left: 10px ;
 		border-radius: 7%;
 	}
+
+	.Articulos {
+		width: 60vw;
+		margin-left: 30px;
+		margin-top: 150px;
+		border-bottom: 1px solid #373d48;
+		padding-bottom: 0.5em;
+	}
+	
+	.item {
+		margin-left: 30px;
+		margin-top: 20px;
+		font-size: 13px;
+	}
 }
 
 
@@ -547,7 +612,7 @@ button {
 
 	.Perfil {
 		display: flex;
-		margin-left: 20px;
+		margin-left: 10px;
 		width: 350px;
 	}
 
@@ -606,5 +671,19 @@ button {
 		cursor: pointer;
 		margin-top: 15px;
 		border-radius: 7%;
+	}
+
+	.Articulos {
+		width: 80vw;
+		margin-left: 30px;
+		margin-top: 150px;
+		border-bottom: 1px solid #373d48;
+		padding-bottom: 0.5em;
+	}
+	
+	.item {
+		margin-left: 30px;
+		margin-top: 20px;
+		font-size: 13px;
 	}
 }
