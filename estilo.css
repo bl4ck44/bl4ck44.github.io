@@ -151,6 +151,7 @@ button {
 
 p {
 	margin-top: 10px;
+	word-spacing: 1px;
 }
 
 .link {
@@ -160,6 +161,37 @@ p {
 
 i {
 	padding-top: 10px;
+}
+
+.Bettercap {
+	margin-left: 350px;
+	margin-top: 50px;
+	padding: 15px;
+}
+
+.Bettercap h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #373d48;
+	width: 68vw;
+}
+
+pre {
+	background-color: #272822;
+    border-radius: 5px;
+    overflow-x: auto;
+	margin-top: 15px;
+    padding: 15px;
+	width: 300px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.language-bash {
+    color: #f8f8f2; /* Color del texto */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -294,6 +326,11 @@ i {
 		margin-left: 30px;
 		margin-top: 90px;
 		font-size: 13px;
+	}
+
+	.Bettercap {
+		margin-left: 30px;
+		margin-top: 90px;
 	}
 }
 
@@ -581,6 +618,11 @@ i {
 		margin-top: 90px;
 		font-size: 13px;
 	}
+
+	.Bettercap {
+		margin-left: 30px;
+		margin-top: 90px;
+	}
 }
 
 
@@ -722,5 +764,15 @@ i {
 		margin-left: 30px;
 		margin-top: 45px;
 		font-size: 13px;
+	}
+
+	.Bettercap {
+		margin-left: 10px;
+		margin-top: 90px;
+	}
+
+	.Bettercap img {
+		width: 330px;
+		height: 200px;
 	}
 }
