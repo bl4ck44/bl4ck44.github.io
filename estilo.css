@@ -15,10 +15,12 @@ body {
 	margin: 0px;
 	padding: 15px;
     border-bottom: 1px solid #373d48;
+	position: relative;
 }
 
 .nav{
 	background-color: #131318;
+	position: relative;
 }
 
 .nav__li{
@@ -77,6 +79,7 @@ button {
 }
 
 .Perfil {
+	top: 2em;
 	margin-top: 35px;
 	margin-left: 35px;
 	width: 260px;
@@ -165,7 +168,7 @@ i {
 
 .Bettercap {
 	margin-left: 350px;
-	margin-top: 50px;
+	margin-top: 15px;
 	padding: 15px;
 }
 
@@ -182,7 +185,7 @@ pre {
     overflow-x: auto;
 	margin-top: 15px;
     padding: 15px;
-	width: 315px;
+	width: 460px;
 }
 
 code {
@@ -249,6 +252,7 @@ code {
 		display: flex;
 		margin-left: 20px;
 		width: 35px;
+		position: static;
 	}
 
 	.Foto {
@@ -330,7 +334,7 @@ code {
 
 	.Bettercap {
 		margin-left: 30px;
-		margin-top: 90px;
+		margin-top: 110px;
 	}
 }
 
@@ -396,149 +400,7 @@ code {
 		display: flex;
 		margin-left: 20px;
 		width: 100%;
-	}
-
-	.Foto {
-		border: 1px solid #373d48;
-		width: 5rem;
-		height: 5rem;
-		border-radius: 50%;
-		padding: 7px;
-	}
-
-	.bl4ck44 {
-		margin-top: 10px;
-		margin-left: 10px;
-		font-size: 15px;
-	}
-
-	.Social {
-		display: none;
-	}
-
-	.Social-movile {
-		position: relative;
-		display: inline-block;
-	}
-
-	.Redes {
-		display: none; /* Oculto por defecto */
-		position: absolute;
-		top: 100%; /* Posiciona el cuadro justo debajo del botón */
-		right: 0;
-		background-color: #131318;
-		border: 1px solid #373d48;
-		padding: 10px;
-		z-index: 1;
-		width: 200px; /* Ancho del cuadro */
-		border-radius: 4%;
-	}
-
-	.Redes a {
-		text-decoration: none;
-		color: white;
-		display: block;
-		margin-top: 10px;
-	}
-	
-	.Redes i {
-		margin-right: 20px;
-	}
-	
-	.Follow {
-		background-color: white;
-		color: black;
-		padding: 10px;
-		border: none;
-		cursor: pointer;
-		margin-top: 25px;
-		margin-left: 10px ;
-		border-radius: 7%;
-	}
-
-	.Articulos {
-		width: 68vw;
-		margin-left: 30px;
-		margin-top: 150px;
-		border-bottom: 1px solid #373d48;
-		padding-bottom: 0.5em;
-	}
-	
-	.item {
-		margin-left: 30px;
-		margin-top: 20px;
-		font-size: 13px;
-	}
-
-	.item2 {
-		margin-left: 30px;
-		margin-top: 90px;
-		font-size: 13px;
-	}
-}
-
-
-
-/* 
-##Device = Low Resolution Tablets, Mobiles (Landscape)
-##Screen = B/w 481px to 767px
-*/
-  
-@media (min-width: 481px) and (max-width: 767px) {
-	.nav__ul{
-		display: none;
-	}
-
-	.nav__responsive-ul{
-		display: block;
-		position: absolute;
-		width: 100%;
-		margin-top: 37px;
-		padding-top: 27px;
-	}
-
-    .nav__li-container{
-		position: relative;
-		top: -1000px;
-		height: 630px;
-		background-color: #131318;
-		transition: all 1s;
-		z-index: 1;
-		width: 250px;
-		padding-top: 27px;
-	}
-
-    .nav__responsive_li{
-		width: 100%;
-		padding: 9px 20px;
-	}
-
-    .nav__responsive_li i{
-		box-sizing: border-box;
-		text-align: center;
-		margin-right: 5px;
-		width: 30px;
-		color: white;
-	}
-
-    .nav {
-		height: 37px;
-		width: 100%;
-	}
-
-	.nav__responsive_li a{
-		text-decoration: none;
-		color: white;
-	}
-
-    .nav__li-container.visible {
-        top: -27px;
-    }
-
-	.Perfil {
-		display: flex;
-		margin-left: 20px;
-		width: 100%;
+		position: static;
 	}
 
 	.Foto {
@@ -621,7 +483,156 @@ code {
 
 	.Bettercap {
 		margin-left: 30px;
+		margin-top: 110px;
+	}
+}
+
+
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+  
+@media (min-width: 481px) and (max-width: 767px) {
+	.nav__ul{
+		display: none;
+	}
+
+	.nav__responsive-ul{
+		display: block;
+		position: absolute;
+		width: 100%;
+		margin-top: 37px;
+		padding-top: 27px;
+	}
+
+    .nav__li-container{
+		position: relative;
+		top: -1000px;
+		height: 630px;
+		background-color: #131318;
+		transition: all 1s;
+		z-index: 1;
+		width: 250px;
+		padding-top: 27px;
+	}
+
+    .nav__responsive_li{
+		width: 100%;
+		padding: 9px 20px;
+	}
+
+    .nav__responsive_li i{
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		width: 30px;
+		color: white;
+	}
+
+    .nav {
+		height: 37px;
+		width: 100%;
+	}
+
+	.nav__responsive_li a{
+		text-decoration: none;
+		color: white;
+	}
+
+    .nav__li-container.visible {
+        top: -27px;
+    }
+
+	.Perfil {
+		display: flex;
+		margin-left: 20px;
+		width: 100%;
+		position: static;
+	}
+
+	.Foto {
+		border: 1px solid #373d48;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		padding: 7px;
+	}
+
+	.bl4ck44 {
+		margin-top: 10px;
+		margin-left: 10px;
+		font-size: 15px;
+	}
+
+	.Social {
+		display: none;
+	}
+
+	.Social-movile {
+		position: relative;
+		display: inline-block;
+	}
+
+	.Redes {
+		display: none; /* Oculto por defecto */
+		position: absolute;
+		top: 100%; /* Posiciona el cuadro justo debajo del botón */
+		right: 0;
+		background-color: #131318;
+		border: 1px solid #373d48;
+		padding: 10px;
+		z-index: 1;
+		width: 200px; /* Ancho del cuadro */
+		border-radius: 4%;
+	}
+
+	.Redes a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		margin-top: 10px;
+	}
+	
+	.Redes i {
+		margin-right: 20px;
+	}
+	
+	.Follow {
+		background-color: white;
+		color: black;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-top: 25px;
+		margin-left: 10px ;
+		border-radius: 7%;
+	}
+
+	.Articulos {
+		width: 68vw;
+		margin-left: 30px;
+		margin-top: 150px;
+		border-bottom: 1px solid #373d48;
+		padding-bottom: 0.5em;
+	}
+	
+	.item {
+		margin-left: 30px;
+		margin-top: 20px;
+		font-size: 13px;
+	}
+
+	.item2 {
+		margin-left: 30px;
 		margin-top: 90px;
+		font-size: 13px;
+	}
+
+	.Bettercap {
+		margin-left: 30px;
+		margin-top: 110px;
 	}
 }
 
@@ -687,6 +698,7 @@ code {
 		display: flex;
 		margin-left: 10px;
 		width: 350px;
+		position: static;
 	}
 
 	.Foto {
@@ -767,12 +779,22 @@ code {
 	}
 
 	.Bettercap {
-		margin-left: 10px;
-		margin-top: 90px;
+		margin-left: 7px;
+		margin-top: 110px;
 	}
 
 	.Bettercap img {
 		width: 330px;
 		height: 200px;
+	}
+
+	pre {
+		width: 330px;
+	}
+
+	#arp {
+		width: 330px;
+		height: 80px;
+		object-fit: fill;
 	}
 }
