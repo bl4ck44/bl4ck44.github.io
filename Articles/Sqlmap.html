@@ -75,6 +75,20 @@
             <pre><code class="language-bash">sqlmap --help</code></pre>
             <p>Detectar automáticamente la inyección de SQL en una URL específica:</p>
             <pre><code class="language-bash">sqlmap -u URL </code></pre>
+            <p>Especificar un parámetro vulnerable en una URL:</p>
+            <pre><code class="language-bash">sqlmap -u URL --param=PARAMETER </code></pre>
+            <p>Probar diferentes tipos de inyección de SQL (booleano, tiempo, basado en errores, etc.):</p>
+            <pre><code class="language-bash">sqlmap -u URL --technique=TECHNIQUE </code></pre>
+            <p>Obtener información sobre la base de datos:</p>
+            <pre><code class="language-bash">sqlmap -u URL --dbs </code></pre>
+            <p>Enumerar todas las tablas de una base de datos:</p>
+            <pre><code class="language-bash">sqlmap -u URL -D DATABASE --tables </code></pre>
+            <p>Enumerar columnas de una tabla:</p>
+            <pre><code class="language-bash">sqlmap -u URL -D DATABASE -T TABLE --columns </code></pre>
+            <p>Extraer datos de una columna específica:</p>
+            <pre><code class="language-bash">sqlmap -u URL -D DATABASE -T TABLE -C COLUMN --dump </code></pre>
+            <p>Usar un archivo de carga útil personalizado:</p>
+            <pre><code class="language-bash">sqlmap -u URL --payload-file=FILE </code></pre>
     </div>
 </body>
 </html>
