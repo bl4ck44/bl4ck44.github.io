@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shorcut icon" href="../Icono.ico">
-    <link rel="stylesheet" href="../estilo.css">
-    <script src="../script.js"></script>
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="shorcut icon" href="Icono.ico">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
 <body>
     <nav class="nav">
 		<ul class="nav__ul">
-			<li class="nav__li"><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
-			<li class="nav__li"><i class="fa fa-list"></i><a href="../categories.html">Categories</a></li>
+			<li class="nav__li"><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+			<li class="nav__li"><i class="fa fa-list"></i><a href="categories.html">Categories</a></li>
 			<li class="nav__li"><i class="fas fa-box-archive"></i><a href="#">Archives</a></li>
             <li class="nav__li"><i class="fa-fw fas fa-info-circle"></i><a href="#">About</a></li>
 		</ul>
@@ -28,8 +28,8 @@
 				<button class="nav__responsive-buttom" onclick="toggleMenu()">☰</button>
 			</div>
           <div class="nav__li-container">
-          	<li class="nav__responsive_li"><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
-			<li class="nav__responsive_li"><i class="fa fa-list"></i><a href="../categories.html">Categories</a></li>
+          	<li class="nav__responsive_li"><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+			<li class="nav__responsive_li"><i class="fa fa-list"></i><a href="categories.html">Categories</a></li>
 			<li class="nav__responsive_li"><i class="fas fa-box-archive"></i><a href="#">Archives</a></li>
 			<li class="nav__responsive_li"><i class="fa-fw fas fa-info-circle"></i><a href="#">About</a></li>
           </div>
@@ -37,7 +37,7 @@
 	</nav>
     <div class="Perfil">
         <div class="Foto">
-            <img src="../bl4ck44.jpg" alt="bl4ck44">
+            <img src="bl4ck44.jpg" alt="bl4ck44">
         </div>
         <div class="bl4ck44">
             <h2>bl4ck44</h2>
@@ -59,28 +59,42 @@
             </div>
         </div>
     </div>
-    <div class="Bettercap">
-        <h1>Análisis con dirsearch</h1>
-        <img src="https://www.kali.org/tools/dirsearch/images/dirsearch-logo.svg" height="300px" width="500px">
-        <h2>Que es y para que sirve dirsearch?</h2>
-        <p>Dirsearch es una herramienta de código abierto para la enumeración de directorios web mediante ataques de fuerza bruta. Está escrita en Python y se utiliza principalmente para encontrar directorios y archivos ocultos en sitios web o aplicaciones web que no están enlazados directamente o que no son visibles desde la interfaz de usuario.</p>
-        <br><h3>Funcionalidades principales:</h3><br>
-        <li>Enumeración de directorios y archivos mediante diccionarios de palabras (wordlists).</li><br>
-        <li>Soporte para varios protocolos: HTTP, HTTPS, etc.</li><br>
-        <li>Compatibilidad con diferentes métodos HTTP (GET, POST, HEAD, etc.).</li><br>
-        <li>Soporte de conexiones a través de proxies.</li><br>
-        <li>Opciones de personalización de encabezados HTTP y cookies.</li><br>
-        <li>Capacidad de manejar errores de estado HTTP, redirecciones y respuestas.</li><br>
-        <li>Soporte de escaneo multihilo para mejorar la velocidad.</li>
-            <h2>Instalación</h2>
-            <pre><code class="language-bash">sudo apt-get install dirsearch</code></pre>
-            <h2>USO</h2>
-            <p>Para buscar directorios web usamos el siguiente comando:</p><br>
-            <pre><code class="language-bash">dirsearch -u [url]</code></pre>
-            <p>Ejemplo:</p>
-            <pre><code class="language-bash">dirsearch -u https://www.google.com/ -e txt,php,html -x 404</code></pre>
-<p><b>-u = URL Target / -e = Extensiones / -x = Estados excluidos</b></p><br>
-<img src="https://github.com/bl4ck44/Articulos/raw/master/OSINT/dirsearch/Img/Ejemplo.png" height="350px" width="550px">
+    <div class="Articulos">
+        <h2>Articulos por categoria</h2>
+    </div>
+    <div class="categories">
+        <div class="categoria">
+            <div class="Tema">
+                <i class="fa-solid fa-folder-open"></i> Explotación
+            </div>
+            <div class="lista">
+                <a href="Articles/Sqlmap.html"><i class="fa-solid fa-folder"></i> Inyección con Sqlmap</a>
+            </div>
+        </div><br>
+        <div class="categoria">
+            <div class="Tema">
+                <i class="fa-solid fa-folder-open"></i> Redes
+            </div>
+            <div class="lista">
+                <a href="Articles/Bettercap.html"><i class="fa-solid fa-folder"></i> Análisis con Bettercap</a>
+            </div>
+        </div><br>
+        <div class="categoria">
+            <div class="Tema">
+                <i class="fa-solid fa-folder-open"></i> OSINT
+            </div>
+            <div class="lista">
+                <a href="Articles/dirsearch.html"><i class="fa-solid fa-folder"></i> Ecaneo de directorios web con dirsearch</a>
+            </div>
+        </div><br>
+        <div class="categoria">
+            <div class="Tema">
+                <i class="fa-solid fa-folder-open"></i> Pentesting
+            </div>
+            <div class="lista">
+                <a href="Articles/pentesting.html"><i class="fa-solid fa-folder"></i> Herramientas para escaneo de vulnerabilidades</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

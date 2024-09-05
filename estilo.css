@@ -133,6 +133,9 @@ button {
 	display: none;
 }
 
+.Home {
+	margin-bottom: 20px;
+}
 
 .Articulos {
 	width: 68vw;
@@ -195,6 +198,43 @@ code {
 
 .language-bash {
     color: #f8f8f2; /* Color del texto */
+}
+
+.categories {
+	margin-left: 350px;
+	margin-top: 30px;
+	padding-bottom: 0.5em;
+}
+
+.categories i {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.categoria {
+	width: 60vw;
+	border: 1px solid #373d48;
+	border-radius: 20px;
+}
+
+.Tema {
+	background-color: #0d0d12;
+	padding: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.lista {
+	background-color: #101014;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 15px;
+}
+
+.lista a {
+	text-decoration: none;
+	color: white;
+	margin-left: 30px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -485,6 +525,11 @@ code {
 		margin-left: 30px;
 		margin-top: 110px;
 	}
+
+	.categories {
+		margin-left: 80px;
+		padding-bottom: 0.5em;
+	}
 }
 
 
@@ -633,6 +678,11 @@ code {
 	.Bettercap {
 		margin-left: 30px;
 		margin-top: 110px;
+	}
+
+	.categories {
+		margin-left: 80px;
+		padding-bottom: 0.5em;
 	}
 }
 
@@ -796,5 +846,14 @@ code {
 		width: 330px;
 		height: 80px;
 		object-fit: fill;
+	}
+
+	.categoria {
+		width: 80vw;
+	}
+
+	.categories {
+		margin-left: 30px;
+		padding-bottom: 0.5em;
 	}
 }
