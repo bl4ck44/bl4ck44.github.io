@@ -26,3 +26,56 @@ function toggleRedes() {
         // Cambia el estilo de display a 'block', mostrando el elemento 'redes'.
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const suggestions = {
+      'Inyección con Sqlmap': '/Articles/Sqlmap.htmlhttps://bl4ck44.github.io/Articles/Sqlmap.html',
+      'Análisis con Bettercap': 'https://bl4ck44.github.io/Articles/Bettercap.html',
+      'Análisis con dirsearch': 'https://bl4ck44.github.io/Articles/dirsearch.html',
+      'Herramientas para escaneo de vulnerabilidades': 'https://bl4ck44.github.io/Articles/pentesting.html',
+  };
+
+  const searchBar = document.getElementById('search-bar');
+  const suggestionsList = document.getElementById('suggestions');
+
+  searchBar.addEventListener('input', function() {
+      const query = searchBar.value.toLowerCase();
+      suggestionsList.innerHTML = ''; // Limpia las sugerencias anteriores
+
+      if (query) {
+          const filteredSuggestions = Object.keys(suggestions).filter(item => item.toLowerCase().includes(query));
+
+          if (filteredSuggestions.length > 0) {
+              suggestionsList.style.display = 'block';
+              filteredSuggestions.forEach(suggestion => {
+                  const listItem = document.createElement('li');
+                  listItem.textContent = suggestion;
+                  listItem.addEventListener('click', () => {
+                      // Redirigir a la URL correspondiente
+                      window.location.href = suggestions[suggestion];
+                      suggestionsList.innerHTML = '';
+                      searchBar.value = '';
+                  });
+                  suggestionsList.appendChild(listItem);
+              });
+          } else {
+              suggestionsList.style.display = 'none';
+          }
+      } else {
+          suggestionsList.style.display = 'none';
+      }
+  });
+
+  document.addEventListener('click', function(event) {
+      if (!searchBar.contains(event.target) && !suggestionsList.contains(event.target)) {
+          suggestionsList.style.display = 'none';
+      }
+  });
+});
+
+
+
+
+
+  
