@@ -27,48 +27,43 @@
 </head>
 <body>
     <nav class="nav">
-		<ul class="nav__ul">
-			<li class="nav__li"><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
-			<li class="nav__li"><i class="fa fa-list"></i><a href="../HTML/categories.html">Categories</a></li>
-		</ul>
-		<ul class="nav__responsive-ul">
-			<div class="nav__responsive-buttom-container">
-				<button class="nav__responsive-buttom" onclick="toggleMenu()">☰</button>
-			</div>
-          <div class="nav__li-container">
-          	<li class="nav__responsive_li"><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
-			<li class="nav__responsive_li"><i class="fa fa-list"></i><a href="../HTML/categories.html">Categories</a></li>
-          </div>
-		</ul>
-	</nav>
+        <!-- Menú normal (para escritorio) -->
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav__li"><a href="../categories.html"><i class="fa fa-list"></i> Categories</a></li>
+        </ul>
+
+        <!-- Contenedor del botón de menú y la barra de búsqueda -->
+        <div class="nav__right">
+            <button class="nav__responsive-buttom" onclick="toggleMenu()">☰</button>
+            <!-- Barra de búsqueda en la versión de escritorio -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+    </nav>
+    <div id="particles-js">
+        <div class="subtitulo">bl4ck44</div>
+        <div class="blog">Blog Personal</div>
+    </div>
     <div class="Perfil">
         <div class="Foto">
             <img src="https://avatars.githubusercontent.com/u/76076759?v=4" alt="bl4ck44">
         </div>
-        <div class="bl4ck44">
+        <div class="info">
             <h2>bl4ck44</h2>
-            <p>Programmer / Ethical Hacker / Reverse Engineering / Software Analyst / Malware Analyst.</p>
+            <p>👨‍💻 Full-Stack Web Developer<br>
+               🖥️ Software Developer<br>
+               👾 Cybersecurity Analyst<br>
+               🎨 Graphic Designer</p>
         </div>
         <div class="Social">
-            <a href="https://github.com/bl4ck44" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-            <a href="https://www.instagram.com/devsebastian31/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="https://x.com/devsebastian31" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="https://app.hackthebox.com/profile/641680" target="_blank"><i class="fa-solid fa-cube"></i>Hack The Box</a>
+            <a href="https://github.com/bl4ck44" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/devsebastian44/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/devsebastian44/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://app.hackthebox.com/profile/641680" target="_blank"><i class="fa-solid fa-cube"></i></a>
         </div>
-        <div class="Social-movile">
-            <button class="Follow" onclick="toggleRedes()">Follow</button>
-            <div class="Redes" id="redes">
-                <a href="https://github.com/bl4ck44" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                <a href="https://www.instagram.com/devsebastian31/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/devsebastian31" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-                <a href="https://app.hackthebox.com/profile/641680" target="_blank"><i class="fa-solid fa-cube"></i>Hack The Box</a>
-            </div>
-        </div>
-    </div>
-    <div class="search-container">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="search-bar" class="search-bar" placeholder="Search">
-        <ul id="suggestions" class="suggestions-list"></ul>
     </div>
     <div class="Articulo">
         <h1>Análisis con dirsearch</h1>
@@ -94,5 +89,8 @@
 <img src="https://github.com/bl4ck44/Articulos/raw/master/OSINT/dirsearch/Img/Ejemplo.png" height="350px" width="550px">
     </div>
     <script src="../JS/script.js"></script>
+        <!-- JS Particles.js -->
+        <script src="../JS/particles.min.js"></script>
+        <script src="../JS/app.js"></script>
 </body>
 </html>
