@@ -61,7 +61,7 @@
 	}
 
 	.login-box {
-		top: 600%;
+		margin-left: 400px;
 	  }
 }
 
@@ -126,6 +126,11 @@
 	.categories {
 		margin-left: 80px;
 		padding-bottom: 0.5em;
+	}
+
+	.login-box {
+		margin-left: 300px;
+		width: 75%;
 	}
 }
 
@@ -235,5 +240,10 @@
 	.categories {
 		margin-left: 30px;
 		padding-bottom: 0.5em;
+	}
+
+	.login-box {
+		margin-left: 170px;
+		width: 75%;
 	}
 }
