@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programador, hacker ético, analista de malware. Artículos sobre ciberseguridad y hacking ético.">
+    <meta name="keywords" content="ciberseguridad, hacking ético, análisis de malware, SQLMap, Bettercap, pentesting">
+    <meta name="author" content="bl4ck44">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Meta para redes sociales -->
+    <meta property="og:title" content="bl4ck44 | Ciberseguridad">
+    <meta property="og:description" content="Explora temas sobre hacking ético, ciberseguridad y análisis de malware.">
+    <meta property="og:image" content="URL_de_tu_imagen">
+    <meta property="og:url" content="https://bl4ck44.github.io/">
+    <link rel="icon" href="Icono.ico">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>bl4ck44 | Ciberseguridad</title>
+</head>
+<body>
+    <nav class="nav">
+        <!-- Menú normal (para escritorio) -->
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav__li"><a href="HTML/categories.html"><i class="fa fa-list"></i> Categories</a></li>
+
+        </ul>
+
+        <!-- Contenedor del botón de menú y la barra de búsqueda -->
+        <div class="nav__right">
+            <button class="nav__responsive-buttom" onclick="toggleMenu()">☰</button>
+            <!-- Barra de búsqueda en la versión de escritorio -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+    </nav>
+
+    <!-- Menú desplegable (solo en móviles) -->
+    <ul class="nav__responsive-ul">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="categories.html"><i class="fa fa-list"></i> Categories</a></li>
+    </ul>
+    <div id="particles-js">
+            <div class="subtitulo">bl4ck44</div>
+            <div class="blog">Blog Personal</div>
+    </div>
+    <div class="Perfil">
+        <div class="Foto">
+            <img src="https://avatars.githubusercontent.com/u/76076759?v=4" alt="bl4ck44">
+        </div>
+        <div class="info">
+            <h2>bl4ck44</h2>
+            <p>👨‍💻 Full-Stack Web Developer<br>
+               🖥️ Software Developer<br>
+               👾 Cybersecurity Analyst<br>
+               🎨 Graphic Designer</p>
+        </div>
+        <div class="Social">
+            <a href="https://github.com/bl4ck44" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/devsebastian44/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/devsebastian44/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://app.hackthebox.com/profile/641680" target="_blank"><i class="fa-solid fa-cube"></i></a>
+        </div>
+    </div>
+    <div class="Home">
+            <div class="item">
+                <img src="https://github.com/bl4ck44/Articulos/raw/master/Explotaci%C3%B3n/sqlmap/Img/Logo.png" alt style="float: right;" class="Logo" width="370px" height="200px">
+                <div class="item-texto">
+                    <a href="./Articles/Sqlmap.html" class="link"><h2>Inyección con Sqlmap</h2></a>
+                    <i class="fa-solid fa-folder"></i> Explotación
+                    <p>Sqlmap es una herramienta de prueba de penetración de código abierto utilizada para detectar y explotar vulnerabilidades de inyección de SQL en aplicaciones web.</p>
+                </div>
+            </div>
+        <div class="item2">
+            <img src="https://github.com/bl4ck44/Articulos/raw/master/Redes/Bettercap/Img/logo.jpg" alt style="float: right;" class="Logo" width="370px" height="218px">
+            <div class="item-texto">
+                <a href="Articles/Bettercap.html" class="link"><h2>Análisis con Bettercap</h2></a>
+                <i class="fa-solid fa-folder"></i> Redes
+                <p>Bettercap es una herramienta potente, flexible y portátil creada para realizar varios tipos de ataques MITM contra una red, manipular HTTP, HTTPS y tráfico TCP en tiempo real, buscar credenciales y mucho más.</p>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="https://www.kali.org/tools/dirsearch/images/dirsearch-logo.svg" alt style="float: right;" class="Logo" width="370px" height="200px">
+            <div class="item-texto">
+                <a href="Articles/dirsearch.html" class="link"><h2>Ecaneo de directorios web con dirsearch</h2></a>
+                <i class="fa-solid fa-folder"></i> OSINT
+                <p>Dirsearch es un escáner de directorios para aplicaciones web (diseñado en Python), que ayudara a un hacker ético a búscar información de un sitio web.</p>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="https://www.informaticaforense.com.co/wp-content/uploads/2022/07/pentesting.png" alt style="float: right;" class="Logo" width="370px" height="170px">
+            <div class="item-texto">
+                <a href="Articles/pentesting.html" class="link"><h2>Herramientas para escaneo de vulnerabilidades</h2></a>
+                <i class="fa-solid fa-folder"></i> Pentesting
+                <p>En este artículo encontraras varias herramientas para el escaneo de vulnerabilidades en páginas web</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form - Modified from Uiverse.io by glisovic01 --> 
+<div class="login-box">
+    <p>Contáctame</p>
+    <form>
+      <div class="user-box">
+        <input required name="name" type="text">
+        <label>Nombre</label>
+      </div>
+      <div class="user-box">
+        <input required name="email" type="email">
+        <label>Correo</label>
+      </div>
+      <div class="user-box">
+        <textarea required name="message"></textarea>
+        <label>Mensaje</label>
+      </div>
+      <button type="submit">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Enviar
+      </button>
+    </form>
+  </div>
+    <script src="JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <!-- JS Particles.js -->
+    <script src="JS/particles.min.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>

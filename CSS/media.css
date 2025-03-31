@@ -59,6 +59,10 @@
 		margin-left: 80px;
 		padding-bottom: 0.5em;
 	}
+
+	.login-box {
+		top: 600%;
+	  }
 }
 
 
