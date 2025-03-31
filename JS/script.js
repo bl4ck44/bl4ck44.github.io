@@ -1,15 +1,3 @@
-// Esperar a que termine la animación del texto antes de aplicar el cambio
-setTimeout(function() {
-    document.body.classList.add("loaded"); // Añadir la clase .loaded para activar la animación
-  
-    // Redirigir a un archivo dentro del servidor después de que termine el loading
-    setTimeout(function() {
-      window.location.href = "./blog.html"; // Ajusta esta ruta con el archivo dentro del servidor
-    }, 1000); // Un segundo después de que termine la animación
-  }, 4000); // Tiempo igual al de la animación del loading (4 segundos)
-
-
-
 function toggleMenu() {
     let menu = document.querySelector(".nav__responsive-ul");
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
@@ -22,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Define un objeto con sugerencias y sus URLs correspondientes.
   // La clave es el texto de la sugerencia y el valor es la URL a la que se redirige.
   const suggestions = {
-      'Inyección con Sqlmap': 'https://bl4ck44.github.io/Articles/Sqlmap.html', // URL para la sugerencia 'Inyección con Sqlmap'
-      'Análisis con Bettercap': 'https://bl4ck44.github.io/Articles/Bettercap.html', // URL para la sugerencia 'Análisis con Bettercap'
-      'Análisis con dirsearch': 'https://bl4ck44.github.io/Articles/dirsearch.html', // URL para la sugerencia 'Análisis con dirsearch'
-      'Herramientas para escaneo de vulnerabilidades': 'https://bl4ck44.github.io/Articles/pentesting.html', // URL para la sugerencia 'Herramientas para escaneo de vulnerabilidades'
+      'Inyección con Sqlmap': './Articles/Sqlmap.html', // URL para la sugerencia 'Inyección con Sqlmap'
+      'Análisis con Bettercap': './Articles/Bettercap.html', // URL para la sugerencia 'Análisis con Bettercap'
+      'Análisis con dirsearch': './Articles/dirsearch.html', // URL para la sugerencia 'Análisis con dirsearch'
+      'Herramientas para escaneo de vulnerabilidades': './Articles/pentesting.html', // URL para la sugerencia 'Herramientas para escaneo de vulnerabilidades'
   };
 
   // Obtiene el elemento de la barra de búsqueda del DOM por su ID.
