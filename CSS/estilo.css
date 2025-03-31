@@ -129,10 +129,10 @@ html::-webkit-scrollbar-thumb {
 /* Menú desplegable (oculto por defecto) */
 .nav__responsive-ul {
     display: none;
-    position: absolute;
-    top: 60px;
-    left: 5%;
-    width: 85%;
+	position: fixed;
+	top: 60px;
+	left: 5%;
+	width: 35%;
     background: rgba(19, 19, 24, 0.9);
     border-radius: 10px;
     padding: 10px 0;
@@ -391,7 +391,7 @@ code {
 .login-box {
 	margin-left: 670px;
 	margin-top: 250px;
-	width: 50%;
+	width: 40%;
 	padding: 40px;
 	transform: translate(-50%, -25%);
 	background: #131318;
