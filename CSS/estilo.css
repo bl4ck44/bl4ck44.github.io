@@ -555,11 +555,30 @@ code {
 	}
   }
 
+  #form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none; /* Oculto por defecto */
+  }
+  .success {
+    background-color: #d4edda;
+    color: black;
+    border: 1px solid #c3e6cb;
+  }
+  .error {
+    background-color: #f8d7da;
+    color: black;
+    border: 1px solid #f5c6cb;
+  }
+
   .copyright {
 	display: flex;
 	justify-content: center;
 	background-color: #131318;
-	padding: 25px;
+	padding: 20px;
   }
 
   

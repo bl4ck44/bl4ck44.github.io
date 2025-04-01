@@ -113,29 +113,31 @@
     <!-- Contact Form - Modified from Uiverse.io by glisovic01 --> 
 <div class="login-box">
     <p>Contáctame</p>
-    <form>
-      <div class="user-box">
-        <input required name="name" type="text">
-        <label>Nombre</label>
-      </div>
-      <div class="user-box">
-        <input required name="email" type="email">
-        <label>Correo</label>
-      </div>
-      <div class="user-box">
-        <textarea required name="message"></textarea>
-        <label>Mensaje</label>
-      </div>
-      <button type="submit">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Enviar
-      </button>
-    </form>
+    <form id="contact-form" action="https://formspree.io/f/xqapdvpe" method="POST">
+        <div class="user-box">
+          <input required name="name" type="text">
+          <label>Nombre</label>
+        </div>
+        <div class="user-box">
+          <input required name="email" type="email">
+          <label>Correo</label>
+        </div>
+        <div class="user-box">
+          <textarea required name="message"></textarea>
+          <label>Mensaje</label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Enviar
+        </button>
+      </form>
+      <!-- Mensaje de éxito o error -->
+       <div id="form-message" class="hidden"></div>
   </div>
-  <span class="copyright">Copyright © | Coded with Sebastian Zhunaula</span>
+  <span class="copyright">Copyright© 2024 | Todos los derechos reservados | R3LI4NT</span>
     <script src="JS/script.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
     <!-- JS Particles.js -->

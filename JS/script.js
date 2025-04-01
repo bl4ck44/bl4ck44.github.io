@@ -85,6 +85,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const messageDiv = document.getElementById("form-message");
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        messageDiv.textContent = "Mensaje enviado exitosamente.";
+        messageDiv.className = "success";
+        form.reset(); // Limpia el formulario
+      } else {
+        throw new Error("Hubo un problema al enviar el mensaje.");
+      }
+    } catch (error) {
+      messageDiv.textContent = "Error al enviar el mensaje. Inténtalo de nuevo.";
+      messageDiv.className = "error";
+    }
+
+    messageDiv.style.display = "block"; // Muestra el mensaje
+    setTimeout(() => { messageDiv.style.display = "none"; }, 5000); // Oculta el mensaje después de 5s
+  });
+
+
 
 
 
