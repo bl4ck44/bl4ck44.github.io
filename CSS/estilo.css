@@ -369,14 +369,14 @@ code {
 }
 
 .Tema {
-	background-color: #0d0d12;
+	background-color: #0a0a0d;
 	padding: 20px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 
 .lista {
-	background-color: #101014;
+	background-color: #131318;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	padding: 15px;
@@ -385,7 +385,7 @@ code {
 .lista a {
 	text-decoration: none;
 	color: white;
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 .login-box {
@@ -553,6 +553,13 @@ code {
 	50%,100% {
 	  bottom: 100%;
 	}
+  }
+
+  .copyright {
+	display: flex;
+	justify-content: center;
+	background-color: #131318;
+	padding: 25px;
   }
 
   
