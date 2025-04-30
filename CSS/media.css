@@ -1,3 +1,49 @@
+/* Estilos para pantallas grandes (laptops y escritorios con ancho mayor a 1024px) */
+
+@media (min-width: 1025px) {
+	.container {
+		display: flex;
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center; /* Centra verticalmente */
+	}
+
+	.Perfil {
+		margin-top: -430px;
+		margin-left: 0px;
+	}
+
+	.item, .item2 {
+		margin-left: 30px;
+	}
+
+	.form {
+		display: flex;
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center; /* Centra verticalmente */
+	}
+
+	.login-box {
+		width: 100%;
+		max-width: 700px;
+	  }
+
+	.container-subtitulo {
+		display: flex;
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center; /* Centra verticalmente */
+	}
+
+	.subtitulo {
+		margin-left: 0px;
+		margin-top: 300px;
+	}
+
+	.blog {
+		margin-left: 0px;
+		margin-top: 360px;
+	}
+  }
+
 /* 
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
