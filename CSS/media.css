@@ -4,12 +4,11 @@
 	.container {
 		display: flex;
 		justify-content: center; /* Centra horizontalmente */
-		align-items: center; /* Centra verticalmente */
+		align-items: flex-start;
 	}
 
 	.Perfil {
 		margin-left: 0px;
-		margin-top: -437px;
 	}
 
 	.item, .item2 {
@@ -42,7 +41,7 @@
 		margin-left: 0px;
 		margin-top: 380px;
 	}
-  }
+}
 
 /* 
 ##Device = Tablets, Ipads (landscape)
