@@ -8,7 +8,6 @@
 	}
 
 	.Perfil {
-		margin-top: -430px;
 		margin-left: 0px;
 	}
 
@@ -35,12 +34,12 @@
 
 	.subtitulo {
 		margin-left: 0px;
-		margin-top: 300px;
+		margin-top: 320px;
 	}
 
 	.blog {
 		margin-left: 0px;
-		margin-top: 360px;
+		margin-top: 380px;
 	}
   }
 
@@ -108,7 +107,7 @@
 
 	.login-box {
 		margin-left: 400px;
-	  }
+	}
 }
 
 
